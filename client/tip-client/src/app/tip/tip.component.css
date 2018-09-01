@@ -1,0 +1,60 @@
+[mat-fab] {
+  position: absolute;
+  right: 2%;
+  top: 35px;
+  z-index: 1;
+}
+
+.my-font1{
+  font-family: 'Monoton';
+  font-size: 70px;
+  color: goldenrod;
+}
+
+.my-font{
+  font-family: 'Black Han Sans', sans-serif;
+  font-size: 70px;
+  color: black
+}
+.tip-container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.tip-input {
+  padding-top: 20px;
+  width: 80%;
+}
+
+.tip-list {
+  overflow: auto;
+  position: fixed;
+  top: 90px;
+  left: 25px;
+  right: 25px;
+  bottom: 120px;
+}
+
+.tip-list-item {
+  margin-top: 21px;
+  margin-bottom: 21px;
+  width: 100%;
+  border-radius: 5px;
+  background-color: #42f4c5;
+}
+
+.main-card {
+  height: 100%;
+}
+
+.tip-footer-container {
+  position: fixed;
+  bottom: 25px;
+  left: 25px;
+  right: 25px;
+}
+
+.tip-notification {
+  text-align: center;
+}

@@ -1,0 +1,19 @@
+
+<mat-card class="my-gradient" >
+  <h2 mat-dialog-title class="my-font">{{params.title}}</h2>
+</mat-card>
+<mat-dialog-content class="make-space">
+  <mat-form-field class="full-width">
+    <input matInput name="username" placeholder="Username" [(ngModel)]="params.username" (keyup.enter)="pooUserCloseForm()" [formControl]="poolUserValidation"
+      required>
+    <mat-error>Required Field</mat-error>
+    <mat-hint>Type Username</mat-hint>
+  </mat-form-field>
+</mat-dialog-content>
+<mat-dialog-content>
+  <mat-form-field class="full-width">
+    <input matInput name="pool" placeholder="Pool name *" [(ngModel)]="params.pool"  (keyup.enter)="pooUserCloseForm()">
+    <mat-hint>Type Pool Name</mat-hint>
+  </mat-form-field>
+</mat-dialog-content>
+

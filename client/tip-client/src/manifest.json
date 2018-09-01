@@ -1,0 +1,27 @@
+{
+    "name": "Open Tip Platform",
+    "start_url":"/",
+    "orientation":"any",
+    "scope":"/",
+    "display":"standalone",
+    "short_name": "Open Tip Platform",
+    "theme_color": "primary",
+    "background_color":"green",
+    "icons": [
+        {
+        "src":"icons/ic_launcher_96.png",
+        "sizes": "96x96"
+        },
+        {
+        "src":"icons/ic_launcher_144.png",
+        "sizes": "144x144"
+        },
+        {
+        "src":"icons/ic_launcher_192.png",
+        "sizes": "192x192"
+        },
+        {
+        "src":"icons/web_hi_res_512.png",
+        "sizes": "512x512"
+        }]
+}

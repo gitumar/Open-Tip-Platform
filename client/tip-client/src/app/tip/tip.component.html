@@ -1,0 +1,31 @@
+
+<div class="tip-container">
+
+  <mat-card class="main-card">
+    <mat-list class="tip-list">
+      <mat-list-item *ngFor="let tipItem of tipItems" [ngClass]="[(tipItem.joinedPool === undefined && tipItem.from.id === user.id)? 'tip-list-item': '']">
+        <img mat-list-avatar *ngIf="tipItem.joinedPool === undefined" [src]="tipItem.from.avatar">
+        <h4 mat-line *ngIf="tipItem.joinedPool === undefined" class="my-font">
+          <b>Total Pool Amount: ${{tipItem.total}}</b>
+        </h4>
+        <h4 mat-line *ngIf="tipItem.joinedPool === undefined" class="my-font">
+            <b>{{tipItem.from.name}} Contributed: ${{tipItem.content}}</b>
+        </h4>
+        <p mat-line *ngIf="tipItem.joinedPool === true" class="tip-notification my-font1">
+          <span>
+            <b>{{tipItem.from.name}}</b> joined tip pool <b>{{tipItem.from.pool}}</b> 
+          </span>
+        </p>
+      </mat-list-item>
+    </mat-list>
+
+    <div class="tip-footer-container">
+      <mat-icon>attach_money</mat-icon>
+      <mat-form-field class="tip-input">
+        <input matInput #inputMessage maxlength="7" placeholder="Enter Tip Amount" [(ngModel)]="tipInfoBody" (keyup.enter)="sendTip(tipInfoBody)">
+        <mat-hint align="end">{{inputMessage.value.length}}/7</mat-hint>
+      </mat-form-field>
+    </div>
+
+  </mat-card>
+</div>

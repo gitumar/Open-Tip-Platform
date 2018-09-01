@@ -1,0 +1,20 @@
+.mat-dialog-content {
+    overflow: hidden;
+}
+.make-space{
+    margin-top: 20px;
+}
+
+.my-font{
+    font-family: 'Monoton', cursive;
+    font-size: 30px;
+}
+.my-gradient {
+    height: 50px;
+    background: black; /* For browsers that do not support gradients */
+    background: linear-gradient(black, purple); /* Standard syntax (must be last) */
+}
+
+.full-width {
+    width: 100%;
+}
